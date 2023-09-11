@@ -8,6 +8,7 @@ function Tours({tours, removeTour}) {
             <div className='cards'>
                 {
                     tours.map( (tour) => {
+                        // ...tour ---> object copy
                         return <Card key={tour.id} {...tour} removeTour={removeTour}></Card>
                     } )
                 }
